@@ -1,0 +1,21 @@
+:root {
+    --blue: #345FF6;
+    --gunmetal: #253347;
+    --dark-electric-blue: #5E6E85;
+    --borders: #D8E2E7;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#main-heading-container {
+    background: linear-gradient(90deg, var(--white), var(--borders))
+}
