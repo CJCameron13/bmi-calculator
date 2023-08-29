@@ -14,8 +14,50 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+    margin: auto;
+}
+
+#top-section {
+    display: flex;
 }
 
 #main-heading-container {
-    background: linear-gradient(90deg, var(--white), var(--borders))
+    background: linear-gradient(135deg, var(--white), var(--gradient-color-1));
+    height: 500px;
+    width: 70%;
+    border-radius: 0px 0px 25px 25px;
+    padding-left: 100px;
+}
+
+#logo {
+    height: 64px;
+    width: 64px;
+    margin-top: 75px;
+}
+
+#main-header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--gunmetal);
+    font-size: 3.2rem;
+    font-weight: 700;
+    width: 420px;
+}
+
+#app-description {
+    color: var(--gunmetal);
+    width: 450px;
+    font-weight: 300;
+}
+
+#calculator-container {
+    background-color: var(--white);
+    position: absolute;
+    right: 0;
+    margin-right: 25%;
+    top: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px var(--dark-electric-blue);
 }
