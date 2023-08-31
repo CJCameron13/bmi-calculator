@@ -26,30 +26,40 @@
       </p>
     </div>
     <div id="calculator-container">
-      <h3>Enter your details below</h3>
-      <form id="unit-selctor">
-        <input type="radio" name="units" value="Metric" class="radio-button" id="metric">
-        <label for="metric">Metric</label>
-        <input type="radio" name="units" value="Imperial" class="radion-button" id="imperial">
-        <label for="imperial">Imperial</label>
+      <h3 id="action-prompt">Enter your details below</h3>
+      <form id="unit-selector">
+        <div class="radio-label-group">
+          <input type="radio" name="units" value="Metric" class="radio-button" id="metric">
+          <label for="metric">Metric</label>
+        </div>
+        <div class="radio-label-group">
+          <input type="radio" name="units" value="Imperial" class="radio-button" id="imperial">
+          <label for="imperial">Imperial</label>
+        </div>
       </form>
       <form id="user-entry">
         <div class="input-group">
-          <p>Height</p>
-          <input type="text" id="height-input">
+          <p class="input-label">Height</p>
+          <input type="text" placeholder="0" id="height-input" class="input">
         </div>
         <div class="input-group">
-          <p>Weight</p>
-          <input type="text" id="weight-input">
+          <p class="input-label">Weight</p>
+          <input type="text" placeholder="0" id="weight-input" class="input">
         </div>
       </form>
-      <div id="quick-results">
-        <div id="bmi">
-          <p id="bmi-heading">Your BMI is...</p>
-          <p id="bmi-result"></p>
+      <div id="blue-container" class="welcome">
+        <div id="welcome">
+          <h3 id="welcome-header">Welcome!</h3>
+          <p id="welcome-message">Enter your height and weight and you'll see your BMI result here</p>
         </div>
-        <div id="score-details">
-          Your BMI suggests you're <span id="bmi-rating"></span>. Your ideal weight is between <span id="ideal-weight"></span>.
+        <div id="quick-results">
+          <div id="bmi">
+            <p id="bmi-heading">Your BMI is...</p>
+            <p id="bmi-result"></p>
+          </div>
+          <div id="score-details">
+            Your BMI suggests you're <span id="bmi-rating"></span>. Your ideal weight is between <span id="ideal-weight"></span>.
+          </div>
         </div>
       </div>
     </div>
