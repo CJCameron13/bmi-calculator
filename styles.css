@@ -1,9 +1,11 @@
 :root {
     --blue: #345FF6;
+    --blue-opaque: rgb(233, 237, 249);
     --gunmetal: #253347;
     --dark-electric-blue: #5E6E85;
     --borders: #D8E2E7;
     --white: #ffffff;
+    --gradient-color-1: #E2F4FD;
 }
 
 * {
@@ -59,5 +61,77 @@ body {
     top: 200px;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 5px 5px 20px var(--dark-electric-blue);
+    box-shadow: 5px 5px 20px var(--gradient-color-1);
+}
+
+#action-prompt {
+    margin-bottom: 20px;
+}
+
+#unit-selector {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.radio-label-group {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.radio-button {
+    height: 31px;
+    width: 31px;
+    margin-right: 10px;
+    appearance: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: var(--borders);
+}
+
+.radio-button:hover {
+    border-color: var(--blue);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.radio-button:focus {
+    background-color: var(--blue);
+    border-color: var(--blue-opaque);
+    border-width: 8px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+#user-entry {
+    display: flex;
+}
+
+.input-group {
+    width: 50%;
+}
+
+.input-label {
+    color: var(--dark-electric-blue);
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+}
+
+.input {
+    border-color: var(--borders);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.welcome #quick-results {
+    display: none;
 }
