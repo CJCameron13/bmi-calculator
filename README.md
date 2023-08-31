@@ -64,6 +64,8 @@ Aug 29 - Got started with styling via CSS. Was able to grab the correct color (o
 ```
 Styling the calculator will be tomorrow's primary goal.
 
+Aug 31 - Made good progress on the calculator box. Biggest new thing learned today was the technique for styling radio buttons and setting appearance:none. I predict that my next challenge will be setting the unit labels/tags inside of the textbox.
+
 ### Built with
 
 - Semantic HTML5 markup
