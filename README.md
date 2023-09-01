@@ -66,6 +66,8 @@ Styling the calculator will be tomorrow's primary goal.
 
 Aug 31 - Made good progress on the calculator box. Biggest new thing learned today was the technique for styling radio buttons and setting appearance:none. I predict that my next challenge will be setting the unit labels/tags inside of the textbox.
 
+Sep 1 - Short day today. Just wanted to do something. Did active states for the input boxes. Got started on welcome box. It appears to have a slight gradient so will need to add that. The rest should be fairly simple.
+
 ### Built with
 
 - Semantic HTML5 markup
