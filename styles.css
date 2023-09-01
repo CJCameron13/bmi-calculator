@@ -111,6 +111,7 @@ label {
 
 #user-entry {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .input-group {
@@ -130,6 +131,36 @@ label {
     border-radius: 10px;
     height: 50px;
     padding-left: 10px;
+}
+
+.input:focus {
+    border-color: var(--blue);
+    outline: none;
+}
+
+#blue-container {
+    background-color: var(--blue);
+    color: var(--white);
+    height: 100px;
+    padding-left: 20px;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#welcome-header {
+    font-weight: 600;
+}
+
+#welcome-message {
+    font-size: 0.7rem;
+    font-weight: 300;
 }
 
 .welcome #quick-results {
