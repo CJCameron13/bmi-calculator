@@ -68,6 +68,8 @@ Aug 31 - Made good progress on the calculator box. Biggest new thing learned tod
 
 Sep 1 - Short day today. Just wanted to do something. Did active states for the input boxes. Got started on welcome box. It appears to have a slight gradient so will need to add that. The rest should be fairly simple.
 
+Sep 3 - Got the gradient done pretty easily. For some reason, the text input increase in size when I increase the font-size value. Would like to find a solution to that. Otherwise the calculator box is ready to go minus the labels inside of the textbox.
+
 ### Built with
 
 - Semantic HTML5 markup
