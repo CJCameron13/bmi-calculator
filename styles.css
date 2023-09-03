@@ -1,5 +1,6 @@
 :root {
     --blue: #345FF6;
+    --soft-blue: #5b7df9;
     --blue-opaque: rgb(233, 237, 249);
     --gunmetal: #253347;
     --dark-electric-blue: #5E6E85;
@@ -58,7 +59,7 @@ body {
     position: absolute;
     right: 0;
     margin-right: 25%;
-    top: 200px;
+    top: 120px;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 5px 5px 20px var(--gradient-color-1);
@@ -112,6 +113,7 @@ label {
 #user-entry {
     display: flex;
     margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 .input-group {
@@ -131,6 +133,8 @@ label {
     border-radius: 10px;
     height: 50px;
     padding-left: 10px;
+    width: 90%;
+    color: var(--dark-electric-blue);
 }
 
 .input:focus {
@@ -139,10 +143,11 @@ label {
 }
 
 #blue-container {
-    background-color: var(--blue);
+    background: linear-gradient(270deg, var(--soft-blue), var(--blue));
     color: var(--white);
     height: 100px;
     padding-left: 20px;
+    border-radius: 10px 50px 50px 10px;
 }
 
 #welcome {
