@@ -40,11 +40,17 @@
       <form id="user-entry">
         <div class="input-group">
           <p class="input-label">Height</p>
-          <input type="text" placeholder="0" maxlength="4" id="height-input" class="input">
+          <div class="input-container">
+            <input type="number" placeholder="0" maxlength="4" id="height-input" class="input">
+            <p class="unit">cm</p>
+          </div>
         </div>
         <div class="input-group">
           <p class="input-label">Weight</p>
-          <input type="text" placeholder="0" maxlength="4" id="weight-input" class="input">
+          <div class="input-container">
+            <input type="number" placeholder="0" maxlength="4" id="weight-input" class="input">
+            <p class="unit">kg</p>
+          </div>
         </div>
       </form>
       <div id="blue-container" class="welcome">
