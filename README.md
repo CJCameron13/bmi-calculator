@@ -70,6 +70,8 @@ Sep 1 - Short day today. Just wanted to do something. Did active states for the 
 
 Sep 3 - Got the gradient done pretty easily. For some reason, the text input increase in size when I increase the font-size value. Would like to find a solution to that. Otherwise the calculator box is ready to go minus the labels inside of the textbox.
 
+Sep 4 - This calculator box has been quite the tinker job. I found a way to get the labels "inside" of the input box by containing the input and label in a parent box. One issue remains and that is the wonky sizing of the input boxes. They still dramatically widen when increasing the font size. And it's the only element that doesn't seem to "listen" to its prescribed width.
+
 ### Built with
 
 - Semantic HTML5 markup
