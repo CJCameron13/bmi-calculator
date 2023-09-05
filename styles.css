@@ -23,6 +23,7 @@ body {
 
 #top-section {
     display: flex;
+    margin-bottom: 40px;
 }
 
 #main-heading-container {
@@ -110,7 +111,7 @@ label {
     font-size: 0.85rem;
 }
 
-#user-entry {
+.user-entry {
     display: flex;
     margin-bottom: 20px;
     justify-content: space-between;
@@ -136,7 +137,7 @@ label {
     border-radius: 10px;
     height: 50px;
     width: 85%;
-    padding-right: 20px;
+    padding-right: 50px;
 }
 
 .input {
@@ -144,7 +145,8 @@ label {
     padding-left: 20px;
     color: var(--dark-electric-blue);
     font-weight: 700;
-    width: 70%;
+    font-size: 1.5rem;
+    width: 150px;
 }
 
 .input::-webkit-inner-spin-button {
@@ -190,4 +192,56 @@ label {
 
 .welcome #quick-results {
     display: none;
+}
+
+#results-definition-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+#man-eating {
+    width: 533px;
+    height: 500px;
+}
+
+#results-definition-text {
+    width: 465px;
+    margin-top: 100px;
+}
+
+#results-header {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--gunmetal);
+    margin-bottom: 20px;
+}
+
+#results-definition {
+    color: var(--dark-electric-blue);
+    line-height: 25px;
+}
+
+#healthy-habits-section {
+    display: flex;
+    background: linear-gradient(320deg, var(--gradient-color-1), var(--white));
+    border-radius: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.habit-icon {
+    margin-bottom: 30px;
+}
+
+.habit-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gunmetal);
+    margin-bottom: 25px;
+}
+
+.habit-description {
+    color: var(--dark-electric-blue);
 }
