@@ -72,6 +72,8 @@ Sep 3 - Got the gradient done pretty easily. For some reason, the text input inc
 
 Sep 4 - This calculator box has been quite the tinker job. I found a way to get the labels "inside" of the input box by containing the input and label in a parent box. One issue remains and that is the wonky sizing of the input boxes. They still dramatically widen when increasing the font size. And it's the only element that doesn't seem to "listen" to its prescribed width.
 
+Sep 5 - By giving the input box a fixed width using px instead of %, I was able to solve the widening issue. Completed more of the layout. Namely the results section and got started with the habits section. Attempted to work on the imperial layout for the calculator box but I will save that for when the page layout is done. Wanted to feel some progress on the page.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -118,7 +120,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [Modern CSS](https://moderncss.dev/pure-css-custom-styled-radio-buttons/) - This helped me with styling the radio buttons.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Stack Overflow](https://stackoverflow.com/questions/49284045/why-does-font-size-increase-an-inputs-width) - Answer by Kurtis helped me to solve the widening input box issue.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
