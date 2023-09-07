@@ -7,6 +7,7 @@
     --borders: #D8E2E7;
     --white: #ffffff;
     --gradient-color-1: #E2F4FD;
+    --gradient-color-2: #f4fbff;
 }
 
 * {
@@ -19,6 +20,7 @@ body {
     font-family: 'Inter', sans-serif;
     max-width: 1440px;
     margin: auto;
+    padding-bottom: 100px;
 }
 
 #top-section {
@@ -58,6 +60,7 @@ body {
 #calculator-container {
     background-color: var(--white);
     position: absolute;
+    width: 500px;
     right: 0;
     margin-right: 25%;
     top: 120px;
@@ -111,10 +114,15 @@ label {
     font-size: 0.85rem;
 }
 
-.user-entry {
+#user-entry-metric {
     display: flex;
     margin-bottom: 20px;
     justify-content: space-between;
+    display: none;
+}
+
+.metric #user-entry-metric {
+    display: flex;
 }
 
 .input-group {
@@ -162,6 +170,29 @@ label {
     color: var(--blue);
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+/* Imperial-specific styling */
+
+#user-entry-imperial {
+    display: none;
+}
+
+.imperial #user-entry-imperial {
+    display: block;
+}
+
+#imperial-height {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#inches-input {
+    align-self: flex-end;
+}
+
+#imperial-weight {
+    margin-bottom: 20px;
 }
 
 #blue-container {
@@ -225,10 +256,16 @@ label {
 
 #healthy-habits-section {
     display: flex;
-    background: linear-gradient(320deg, var(--gradient-color-1), var(--white));
+    background: linear-gradient(320deg, var(--gradient-color-2), var(--white));
     border-radius: 25px;
     padding-top: 50px;
     padding-bottom: 50px;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.habit-container {
+    width: 25%;
 }
 
 .habit-icon {
@@ -245,3 +282,64 @@ label {
 .habit-description {
     color: var(--dark-electric-blue);
 }
+
+#limitations-first-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+#limitations-header-container {
+    width: 40%;
+}
+
+#limitations-main-header {
+    font-size: 2.5rem;
+    color: var(--gunmetal);
+    margin-bottom: 20px;
+}
+
+#limitations-overview {
+    color: var(--dark-electric-blue);
+}
+
+#limitations-second-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    gap: 30px;
+    
+}
+
+#limitations-third-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.limitation-container {
+    width: 25%;
+    box-shadow: 10px 10px 30px var(--borders);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.limitation-header-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.limitation-icon {
+    margin-right: 10px;
+}
+
+.limitation-header {
+    color: var(--gunmetal);
+    font-size: 1.1rem;
+}
+
+.limitation-description {
+    color: var(--dark-electric-blue);
+}
+
