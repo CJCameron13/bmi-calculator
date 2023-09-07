@@ -195,13 +195,15 @@ label {
     margin-bottom: 20px;
 }
 
-#blue-container {
+#blue-container.welcome {
     background: linear-gradient(270deg, var(--soft-blue), var(--blue));
     color: var(--white);
     height: 100px;
     padding-left: 20px;
     border-radius: 10px 50px 50px 10px;
 }
+
+/* Initial state of blue container */
 
 #welcome {
     display: flex;
@@ -224,6 +226,47 @@ label {
 .welcome #quick-results {
     display: none;
 }
+
+/* Blue container state after user entry */
+
+#blue-container.results {
+    background: linear-gradient(270deg, var(--soft-blue), var(--blue));
+    color: var(--white);
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px 70px 70px 10px;
+}
+
+.results #welcome {
+    display:none;
+}
+
+#quick-results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bmi-result {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#score-details {
+    width: 40%;
+}
+
+#bmi-rating {
+    font-weight: 700;
+}
+
+#ideal-weight {
+    font-weight: 700;
+}
+
+/* Top section end */
 
 #results-definition-section {
     display: flex;
