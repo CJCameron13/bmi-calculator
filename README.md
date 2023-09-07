@@ -74,6 +74,8 @@ Sep 4 - This calculator box has been quite the tinker job. I found a way to get 
 
 Sep 5 - By giving the input box a fixed width using px instead of %, I was able to solve the widening issue. Completed more of the layout. Namely the results section and got started with the habits section. Attempted to work on the imperial layout for the calculator box but I will save that for when the page layout is done. Wanted to feel some progress on the page.
 
+Sep 6 - Good progress today. Completed the base desktop layout for all sections. I may need to make some adjustments to ensure that the page is dynamic and will work on different desktop viewport sizes, before moving to a tablet or mobile version. Completed the metic and imperial states for the calculator, along with the Javascript to toggle between the two. Proud of how easily I was able to get that done. Next session we will begin tackling the actual calculator.
+
 ### Built with
 
 - Semantic HTML5 markup
