@@ -27,6 +27,7 @@
     </div>
     <div id="calculator-container">
       <h3 id="action-prompt">Enter your details below</h3>
+      <!--Radio Selectors-->
       <form id="unit-selector">
         <div class="radio-label-group">
           <input type="radio" name="units" value="Metric" class="radio-button" id="metric">
@@ -37,22 +38,47 @@
           <label for="imperial">Imperial</label>
         </div>
       </form>
-      <form id="user-entry" class="user-entry">
+      <!-- Metric State -->
+      <form id="user-entry-metric" class="user-entry">
         <div class="input-group">
           <p class="input-label">Height</p>
           <div class="input-container">
-            <input type="number" placeholder="0" maxlength="4" id="height-input" class="input">
+            <input type="number" placeholder="0" id="height-input" class="input">
             <p class="unit">cm</p>
           </div>
         </div>
         <div class="input-group">
           <p class="input-label">Weight</p>
           <div class="input-container">
-            <input type="number" placeholder="0" maxlength="4" id="weight-input" class="input">
+            <input type="number" placeholder="0" id="weight-input" class="input">
             <p class="unit">kg</p>
           </div>
         </div>
       </form>
+      <!-- Imperial State -->
+      <form id="user-entry-imperial" class="user-entry">
+        <div id="imperial-height" class="input-group">
+          <div>
+            <p class="input-label">Height</p>
+            <div class="input-container">
+              <input type="number" placeholder="0" id="height-input" class="input">
+              <p class="unit">ft</p>
+            </div>
+          </div>
+          <div id="inches-input" class="input-container">
+            <input type="number" placeholder="0" id="height-input" class="input">
+            <p class="unit">in</p>
+          </div>
+        </div>
+        <div id="imperial-weight" class="input-group">
+          <p class="input-label">Weight</p>
+          <div class="input-container">
+            <input type="number" placeholder="0" id="weight-input" class="input">
+            <p class="unit">lbs</p>
+          </div>
+        </div>
+      </form>
+      <!-- Imperial End -->
       <div id="blue-container" class="welcome">
         <div id="welcome">
           <h3 id="welcome-header">Welcome!</h3>
@@ -115,60 +141,74 @@
 
   <div id="limitations-section">
     <div id="limitations-first-row">
-      <h2 id="limitations-header">Limitations of BMI</h2>
-      <p id="limitations-overview">
-        Although BMI is often a practical indicator of healthy weight, it is not suited for
-        every person. Specific groups should carefully consider their BMI outcomes, and in
-        certain cases, the measurement may not be beneficial to use.
-      </p>
-      <div class="limitation-header-group">
-        <img src="/code-files/assets/images/icon-gender.svg" alt="gender icon" class="limitation-icon">
-        <h4 class="limitation-header">Gender</h4>
+      <div id="limitations-header-container">
+        <h2 id="limitations-main-header">Limitations of BMI</h2>
+        <p id="limitations-overview">
+          Although BMI is often a practical indicator of healthy weight, it is not suited for
+          every person. Specific groups should carefully consider their BMI outcomes, and in
+          certain cases, the measurement may not be beneficial to use.
+        </p>
       </div>
-      <p class="limitation-description">
-        The development and body fat composition of girls and boys vary with age. Consequently,
-        a child's age and gender are considered when evaluating their BMI.
-      </p>
+      <div class="limitation-container">
+        <div class="limitation-header-group">
+          <img src="/code-files/assets/images/icon-gender.svg" alt="gender icon" class="limitation-icon">
+          <h4 class="limitation-header">Gender</h4>
+        </div>
+        <p class="limitation-description">
+          The development and body fat composition of girls and boys vary with age. Consequently,
+          a child's age and gender are considered when evaluating their BMI.
+        </p>
+      </div>
     </div>
     <div id="limitations-second-row">
-      <div class="limitation-header-group">
-        <img src="/code-files/assets/images/icon-age.svg" alt="age icon" class="limitation-icon">
-        <h4 class="limitation-header">Age</h4>
+      <div class="limitation-container">
+        <div class="limitation-header-group">
+          <img src="/code-files/assets/images/icon-age.svg" alt="age icon" class="limitation-icon">
+          <h4 class="limitation-header">Age</h4>
+        </div>
+        <p class="limitation-description">
+          In aging individuals, increased body fat and muscle loss may cause BMI to underestimate
+          body fat content.
+        </p>
       </div>
-      <p class="limitation-description">
-        In aging individuals, increased body fat and muscle loss may cause BMI to underestimate
-        body fat content.
-      </p>
-      <div class="limitation-header-group">
-        <img src="/code-files/assets/images/icon-muscle.svg" alt="muscle icon" class="limitation-icon">
-        <h4 class="limitation-header">Muscle</h4>
+      <div class="limitation-container">
+        <div class="limitation-header-group">
+          <img src="/code-files/assets/images/icon-muscle.svg" alt="muscle icon" class="limitation-icon">
+          <h4 class="limitation-header">Muscle</h4>
+        </div>
+        <p class="limitation-description">
+          BMI may misclassify muscular individuals as overweight or obese, as it doesn't
+          differentiate muscle from fat.
+        </p>
       </div>
-      <p class="limitation-description">
-        BMI may misclassify muscular individuals as overweight or obese, as it doesn't
-        differentiate muscle from fat.
-      </p>
     </div>
     <div id="limitations-third-row">
-      <div class="limitation-header-group">
-        <img src="/code-files/assets/images/icon-pregnancy.svg" alt="pregnancy icon" class="limitation-icon">
-        <h4 class="limitation-header">Pregnancy</h4>
+      <div class="limitation-container">
+        <div class="limitation-header-group">
+          <img src="/code-files/assets/images/icon-pregnancy.svg" alt="pregnancy icon" class="limitation-icon">
+          <h4 class="limitation-header">Pregnancy</h4>
+        </div>
+        <p class="limitation-description">
+          Expectant mothers experience weight gain due to their growing baby. Maintaining a
+          healthy pre-pregnancy BMI is advisable to minimise health risks for both mother
+          and child.
+        </p>
       </div>
-      <p class="limitation-description">
-        Expectant mothers experience weight gain due to their growing baby. Maintaining a
-        healthy pre-pregnancy BMI is advisable to minimise health risks for both mother
-        and child.
-      </p>
-      <div class="limitation-header-group">
-        <img src="/code-files/assets/images/icon-race.svg" alt="race icon" class="limitation-icon">
-        <h4 class="limitation-header">Race</h4>
+      <div class="limitation-container">
+        <div class="limitation-header-group">
+          <img src="/code-files/assets/images/icon-race.svg" alt="race icon" class="limitation-icon">
+          <h4 class="limitation-header">Race</h4>
+        </div>
+        <p class="limitation-description">
+          Certain health concerns may affect individuals of some Black and Asian origins at
+          lower BMIs than others. To learn more, it is advised to discuss this with your
+          GP or practice nurse.
+        </p>
       </div>
-      <p class="limitation-description">
-        Certain health concerns may affect individuals of some Black and Asian origins at
-        lower BMIs than others. To learn more, it is advised to discuss this with your
-        GP or practice nurse.
-      </p>
     </div>
   </div>
+
+<script src="/code-files/index.js"></script>
 
 </body>
 </html>
