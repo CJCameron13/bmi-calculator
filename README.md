@@ -76,6 +76,8 @@ Sep 5 - By giving the input box a fixed width using px instead of %, I was able 
 
 Sep 6 - Good progress today. Completed the base desktop layout for all sections. I may need to make some adjustments to ensure that the page is dynamic and will work on different desktop viewport sizes, before moving to a tablet or mobile version. Completed the metic and imperial states for the calculator, along with the Javascript to toggle between the two. Proud of how easily I was able to get that done. Next session we will begin tackling the actual calculator.
 
+Sep 7 - Completed the blue container results layout. It appears once the user selects either metric or imperial, I thought it easier to simply ride it along the existing event listeners. I gathered the formula for calculating BMI. At least for imperial measurements. It will be challenge to work all of that out in JS.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -123,6 +125,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Modern CSS](https://moderncss.dev/pure-css-custom-styled-radio-buttons/) - This helped me with styling the radio buttons.
 - [Stack Overflow](https://stackoverflow.com/questions/49284045/why-does-font-size-increase-an-inputs-width) - Answer by Kurtis helped me to solve the widening input box issue.
+- [Cleveland Clinic](https://my.clevelandclinic.org/health/articles/9464-body-mass-index-bmi) - BMI formula (Imperial)
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
