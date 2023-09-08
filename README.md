@@ -78,6 +78,8 @@ Sep 6 - Good progress today. Completed the base desktop layout for all sections.
 
 Sep 7 - Completed the blue container results layout. It appears once the user selects either metric or imperial, I thought it easier to simply ride it along the existing event listeners. I gathered the formula for calculating BMI. At least for imperial measurements. It will be challenge to work all of that out in JS.
 
+Sep 8 - Learned about 'input' event listeners and did a quick test. Also corrected an oversight where I had several elements using the same ID.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -126,6 +128,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Modern CSS](https://moderncss.dev/pure-css-custom-styled-radio-buttons/) - This helped me with styling the radio buttons.
 - [Stack Overflow](https://stackoverflow.com/questions/49284045/why-does-font-size-increase-an-inputs-width) - Answer by Kurtis helped me to solve the widening input box issue.
 - [Cleveland Clinic](https://my.clevelandclinic.org/health/articles/9464-body-mass-index-bmi) - BMI formula (Imperial)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event) - Input events
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
