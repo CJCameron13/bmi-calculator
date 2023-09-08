@@ -3,6 +3,7 @@ const metricBoxes = document.querySelector('#user-entry-metric')
 const metricSelector = document.querySelector('#metric')
 const imperialSelector = document.querySelector('#imperial')
 const blueContainer = document.querySelector('#blue-container')
+const feetInput = document.querySelector('#ft-input')
 
 metricSelector.addEventListener('click', () => {
     console.log('item clicked')
@@ -17,4 +18,8 @@ imperialSelector.addEventListener('click', () => {
     calculatorContainer.classList.remove('metric')
     blueContainer.classList.remove('welcome')
     blueContainer.classList.add('results')
+})
+
+feetInput.addEventListener('input', () => {
+    console.log(feetInput.value)
 })
