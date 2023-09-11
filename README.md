@@ -80,6 +80,8 @@ Sep 7 - Completed the blue container results layout. It appears once the user se
 
 Sep 8 - Learned about 'input' event listeners and did a quick test. Also corrected an oversight where I had several elements using the same ID.
 
+Sep 11 - Learned toFixed() method for setting a specific demical place. The calculator works! Still much work to be done and I only have the imperial version as of now. I also want it work a little smoother, such as waiting until the user has entered all stats before displaying the bmi. So I don't get any nasty NaNs. Very excited this is coming together however.
+
 ### Built with
 
 - Semantic HTML5 markup
