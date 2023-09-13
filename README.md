@@ -82,18 +82,14 @@ Sep 8 - Learned about 'input' event listeners and did a quick test. Also correct
 
 Sep 11 - Learned toFixed() method for setting a specific demical place. The calculator works! Still much work to be done and I only have the imperial version as of now. I also want it work a little smoother, such as waiting until the user has entered all stats before displaying the bmi. So I don't get any nasty NaNs. Very excited this is coming together however.
 
+Sep 12 - Very pleased with where I am. I was able to prevent NaN from appearing as the browser waits for the conditions to be met before it populates the bmi result. Both imperial and metric calculators are now functional. I'd like for the result to reset if the user later decides to select the other measurment system, however they don't seem to overlap so the calculations will still come out proper once the appropriate data is entered. So it's not functionally important, however it just may make for a cleaner user experience. Next task will be populating the results description section that will tell the user whether they are overweight, underweight etc. I believe this will require some asynchronous programming techniques as I don't want it to populate until the bmi has been calculated. Excited to delve into that.
+
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Javascript
 
 ### What I learned
 
@@ -130,9 +126,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Modern CSS](https://moderncss.dev/pure-css-custom-styled-radio-buttons/) - This helped me with styling the radio buttons.
 - [Stack Overflow](https://stackoverflow.com/questions/49284045/why-does-font-size-increase-an-inputs-width) - Answer by Kurtis helped me to solve the widening input box issue.
 - [Cleveland Clinic](https://my.clevelandclinic.org/health/articles/9464-body-mass-index-bmi) - BMI formula (Imperial)
+- [CDC](https://www.cdc.gov/nccdphp/dnpao/growthcharts/training/bmiage/page5_1.html#:~:text=With%20the%20metric%20system%2C%20the,by%2010%2C000%2C%20can%20be%20used.) - BMI formula (metric)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event) - Input events
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
