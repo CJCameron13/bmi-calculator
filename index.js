@@ -3,13 +3,14 @@ const metricBoxes = document.querySelector('#user-entry-metric')
 const metricSelector = document.querySelector('#metric')
 const imperialSelector = document.querySelector('#imperial')
 const blueContainer = document.querySelector('#blue-container')
+const cmInput = document.querySelector('#cm-input')
+const kgInput = document.querySelector('#kg-input')
 const feetInput = document.querySelector('#ft-input')
 const inchesInput = document.querySelector('#in-input')
 const lbsInput = document.querySelector('#lbs-input')
 const bmiResult = document.querySelector('#bmi-result')
 
 metricSelector.addEventListener('click', () => {
-    console.log('item clicked')
     calculatorContainer.classList.add('metric')
     calculatorContainer.classList.remove('imperial')
     blueContainer.classList.remove('welcome')
@@ -21,6 +22,39 @@ imperialSelector.addEventListener('click', () => {
     calculatorContainer.classList.remove('metric')
     blueContainer.classList.remove('welcome')
     blueContainer.classList.add('results')
+})
+
+// Metric functions
+
+function getCentimeters() {
+    let userHeightCentimeters = cmInput.value
+    userHeightCentimeters = Number.parseInt(userHeightCentimeters, 10)
+    return userHeightCentimeters
+}
+
+function getKilograms() {
+    let userWeightKilograms = kgInput.value
+    userWeightKilograms = Number.parseInt(userWeightKilograms, 10)
+    return userWeightKilograms
+}
+
+function getBmiMetric () {
+    let userBmi = getKilograms() / getCentimeters()
+    userBmi /= getCentimeters()
+    userBmi *= 10000
+    return userBmi.toFixed(1)
+}
+
+kgInput.addEventListener('input', () => {
+    if (kgInput.value > 0 && cmInput.value > 0) {
+        bmiResult.textContent = getBmiMetric()
+    }
+})
+
+cmInput.addEventListener('input', () => {
+    if (kgInput.value > 0 && cmInput.value > 0) {
+        bmiResult.textContent = getBmiMetric()
+    }
 })
 
 // Imperial functions
@@ -49,22 +83,28 @@ function getLbs() {
 
 function getBmiImperial() {
     let userBmi = getLbs() * 703
-    userBmi = userBmi / getTotalInches()
-    userBmi = userBmi / getTotalInches()
+    userBmi /= getTotalInches()
+    userBmi /= getTotalInches()
     return userBmi.toFixed(1)
 }
 
 feetInput.addEventListener('input', () => {
-    // console.log(getInchesFromFeet() + getInches())
+    if (feetInput.value > 0 && lbsInput.value > 0 && inchesInput.value !== "") {
+        bmiResult.textContent = getBmiImperial()
+    }
 })
 
 inchesInput.addEventListener('input', () => {
-    // console.log(getInchesFromFeet() + getInches())
-    // console.log(`You weigh ${getLbs()} lbs`)
+    if (feetInput.value > 0 && lbsInput.value > 0 && inchesInput.value !== "") {
+        bmiResult.textContent = getBmiImperial()
+    } 
 })
 
 lbsInput.addEventListener('input', () => {
-    console.log(getBmiImperial())
-    bmiResult.textContent = getBmiImperial()
+    if (feetInput.value > 0 && lbsInput.value > 0 && inchesInput.value !== "") {
+        bmiResult.textContent = getBmiImperial()
+    } 
 })
+
+
 
