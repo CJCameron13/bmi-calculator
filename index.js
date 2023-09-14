@@ -9,6 +9,7 @@ const feetInput = document.querySelector('#ft-input')
 const inchesInput = document.querySelector('#in-input')
 const lbsInput = document.querySelector('#lbs-input')
 const bmiResult = document.querySelector('#bmi-result')
+const bmiRating = document.querySelector('#bmi-rating')
 
 metricSelector.addEventListener('click', () => {
     calculatorContainer.classList.add('metric')
@@ -55,6 +56,26 @@ cmInput.addEventListener('input', () => {
     if (kgInput.value > 0 && cmInput.value > 0) {
         bmiResult.textContent = getBmiMetric()
     }
+})
+
+cmInput.addEventListener('input', () => {
+    if (getBmiMetric() < 18.5) {
+        bmiRating.textContent = 'underweight'
+    } else if (getBmiMetric() <= 24.9) {
+        bmiRating.textContent = 'a healthy weight'
+    } else if (getBmiMetric() <= 29.9) {
+        bmiRating.textContent = 'overweight'
+    } else bmiRating.textContent = 'obese'
+})
+
+kgInput.addEventListener('input', () => {
+    if (getBmiMetric() < 18.5) {
+        bmiRating.textContent = 'underweight'
+    } else if (getBmiMetric() <= 24.9) {
+        bmiRating.textContent = 'a healthy weight'
+    } else if (getBmiMetric() <= 29.9) {
+        bmiRating.textContent = 'overweight'
+    } else bmiRating.textContent = 'obese'
 })
 
 // Imperial functions
@@ -106,5 +127,32 @@ lbsInput.addEventListener('input', () => {
     } 
 })
 
+feetInput.addEventListener('input', () => {
+    if (getBmiImperial() < 18.5) {
+        bmiRating.textContent = 'underweight'
+    } else if (getBmiImperial() <= 24.9) {
+        bmiRating.textContent = 'a healthy weight'
+    } else if (getBmiImperial() <= 29.9) {
+        bmiRating.textContent = 'overweight'
+    } else bmiRating.textContent = 'obese'
+})
 
+inchesInput.addEventListener('input', () => {
+    if (getBmiImperial() < 18.5) {
+        bmiRating.textContent = 'underweight'
+    } else if (getBmiImperial() <= 24.9) {
+        bmiRating.textContent = 'a healthy weight'
+    } else if (getBmiImperial() <= 29.9) {
+        bmiRating.textContent = 'overweight'
+    } else bmiRating.textContent = 'obese'
+})
 
+lbsInput.addEventListener('input', () => {
+    if (getBmiImperial() < 18.5) {
+        bmiRating.textContent = 'underweight'
+    } else if (getBmiImperial() <= 24.9) {
+        bmiRating.textContent = 'a healthy weight'
+    } else if (getBmiImperial() <= 29.9) {
+        bmiRating.textContent = 'overweight'
+    } else bmiRating.textContent = 'obese'
+})
