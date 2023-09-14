@@ -84,6 +84,8 @@ Sep 11 - Learned toFixed() method for setting a specific demical place. The calc
 
 Sep 12 - Very pleased with where I am. I was able to prevent NaN from appearing as the browser waits for the conditions to be met before it populates the bmi result. Both imperial and metric calculators are now functional. I'd like for the result to reset if the user later decides to select the other measurment system, however they don't seem to overlap so the calculations will still come out proper once the appropriate data is entered. So it's not functionally important, however it just may make for a cleaner user experience. Next task will be populating the results description section that will tell the user whether they are overweight, underweight etc. I believe this will require some asynchronous programming techniques as I don't want it to populate until the bmi has been calculated. Excited to delve into that.
 
+Sep 13 - No code updates today, just some research and thought on how I will have the results description populate after the results have been calculated. I honestly could just run seperate event listeners. I will give that a shot in my next session. A bit out of brain power for today.
+
 ### Built with
 
 - Semantic HTML5 markup
