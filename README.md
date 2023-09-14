@@ -86,6 +86,8 @@ Sep 12 - Very pleased with where I am. I was able to prevent NaN from appearing 
 
 Sep 13 - No code updates today, just some research and thought on how I will have the results description populate after the results have been calculated. I honestly could just run seperate event listeners. I will give that a shot in my next session. A bit out of brain power for today.
 
+Sep 14 - Went with adding seperate event listeners and was able to get weight classifications based on the calculated bmi. Calculates dynamically along with the bmi. Will take some thinking to figure out how to get a calculation for the healthy weight range.
+
 ### Built with
 
 - Semantic HTML5 markup
