@@ -10,6 +10,8 @@ const inchesInput = document.querySelector('#in-input')
 const lbsInput = document.querySelector('#lbs-input')
 const bmiResult = document.querySelector('#bmi-result')
 const bmiRating = document.querySelector('#bmi-rating')
+const lowerThreshold = document.querySelector('#lower-threshold')
+const upperThreshold = document.querySelector('#upper-threshold')
 
 metricSelector.addEventListener('click', () => {
     calculatorContainer.classList.add('metric')
@@ -155,4 +157,61 @@ lbsInput.addEventListener('input', () => {
     } else if (getBmiImperial() <= 29.9) {
         bmiRating.textContent = 'overweight'
     } else bmiRating.textContent = 'obese'
+})
+
+//Healthy weight range
+
+function getLowerThresholdImperial() {
+    let userHeight = getTotalInches()
+    return 18.5 * Math.pow(userHeight, 2) / 703
+}
+
+function getUpperThresholdImperial() {
+    let userHeight = getTotalInches()
+    return 24.9 * Math.pow(userHeight, 2) / 703
+}
+
+function getLowerThresholdMetric() {
+    let userHeight = getCentimeters()
+    return 18.5 * Math.pow(userHeight, 2) / 10000
+}
+
+function getUpperThresholdMetric() {
+    let userHeight = getCentimeters()
+    return 24.9 * Math.pow(userHeight, 2) / 10000
+}
+
+feetInput.addEventListener('input', () => {
+    if (feetInput.value > 0 && lbsInput.value > 0 && inchesInput.value !== "") {
+        lowerThreshold.textContent = getLowerThresholdImperial().toFixed(0)
+        upperThreshold.textContent = getUpperThresholdImperial().toFixed(0)
+    }
+})
+
+inchesInput.addEventListener('input', () => {
+    if (feetInput.value > 0 && lbsInput.value > 0 && inchesInput.value !== "") {
+        lowerThreshold.textContent = getLowerThresholdImperial().toFixed(0)
+        upperThreshold.textContent = getUpperThresholdImperial().toFixed(0)
+    } 
+})
+
+lbsInput.addEventListener('input', () => {
+    if (feetInput.value > 0 && lbsInput.value > 0 && inchesInput.value !== "") {
+        lowerThreshold.textContent = getLowerThresholdImperial().toFixed(0)
+        upperThreshold.textContent = getUpperThresholdImperial().toFixed(0)
+    } 
+})
+
+kgInput.addEventListener('input', () => {
+    if (kgInput.value > 0 && cmInput.value > 0) {
+        lowerThreshold.textContent = getLowerThresholdMetric().toFixed(0)
+        upperThreshold.textContent = getUpperThresholdMetric().toFixed(0)
+    }
+})
+
+cmInput.addEventListener('input', () => {
+    if (kgInput.value > 0 && cmInput.value > 0) {
+        lowerThreshold.textContent = getLowerThresholdMetric().toFixed(0)
+        upperThreshold.textContent = getUpperThresholdMetric().toFixed(0)
+    }
 })
