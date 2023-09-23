@@ -88,6 +88,8 @@ Sep 13 - No code updates today, just some research and thought on how I will hav
 
 Sep 14 - Went with adding seperate event listeners and was able to get weight classifications based on the calculated bmi. Calculates dynamically along with the bmi. Will take some thinking to figure out how to get a calculation for the healthy weight range.
 
+Sep 23 - After a long break I have finally put the finishing touches on the calculator JS. I was able to find a reverse BMI calculator that allowed me to get the lower and upper thresholds for the specific weight that the user entered. I feel like I could have combined code under some of my event listeners, but even if redundant, the code still feels clean. That should be it for JS. Now to go back and make sure the site layout is responsive and to put together the mobile version.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -132,6 +134,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Cleveland Clinic](https://my.clevelandclinic.org/health/articles/9464-body-mass-index-bmi) - BMI formula (Imperial)
 - [CDC](https://www.cdc.gov/nccdphp/dnpao/growthcharts/training/bmiage/page5_1.html#:~:text=With%20the%20metric%20system%2C%20the,by%2010%2C000%2C%20can%20be%20used.) - BMI formula (metric)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event) - Input events
+- [Calculator Academy](https://calculator.academy/reverse-bmi-calculator/) - Reverse BMI formula
 
 ## Author
 
