@@ -103,7 +103,7 @@ body {
     cursor: pointer;
 }
 
-.radio-button:focus {
+.radio-button:checked {
     background-color: var(--blue);
     border-color: var(--blue-opaque);
     border-width: 8px;
@@ -262,7 +262,7 @@ label {
     font-weight: 700;
 }
 
-#ideal-weight {
+.ideal-weight {
     font-weight: 700;
 }
 
